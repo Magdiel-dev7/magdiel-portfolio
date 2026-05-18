@@ -21,4 +21,5 @@ Projeto criado para apresentar minha trajetória, projetos e habilidades como De
 
  Deploy
 
-https://magdiel-dev7.github.io/magdiel-portfolio/ 
+ https://magdiel-dev7.github.io/magdiel-portfolio/
+ 
