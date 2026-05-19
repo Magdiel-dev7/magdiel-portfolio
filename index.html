@@ -1,284 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Magdiel Barbosa | Portfólio</title>
-        <style>
-            *header {
-                position:fixed;
-                width:100%;
-                top:0;
-                background: rgba(15,23,42,0.85);
-                backdrop-filter:blur(10px);
-                z-index: 1000;
-                border-bottom:1px solid rgba(255,255,255,0.08);
-                
-                /* background: #0f172a; */
-                
-                margin:0;
-                padding:0;
-                box-sizing:border-box;
-                scroll-behavior:smooth;
-            }
-
-            nav{
-                display:flex;
-                justify-content:center;
-                gap:30px;
-                padding:18px;
-            }
-
-            nav a{
-                color:#f8fafc;
-                text-decoration: none;
-                font-weight:bold;
-                transition:0.3s;
-            }
-
-            nav a:hover{
-                color:#38bdf8;
-            }
-
-            body{
-                padding-top:0px;
-                font-family:Arial, Helvetica, sans-serif;
-                background:#0f172a;
-                color:#f8fafc;
-                line-height:1.6;
-            }
-
-            .container{
-                width:90%;
-                max-width:1100px;
-                margin:auto;
-            }
-
-            section{
-                padding:70px 0;
-
-            }
-
-            h2{
-                font-size:2rem;
-                margin-bottom:25px;
-                color:#38bdf8;
-            }
-
-            /*
-            .hero{
-                min-height:100vh;
-                display:flex;
-                align-items:center;
-                text-align:center;
-
-        background:linear-gradient(135deg,#0f172a,#1e293b);
-            }
-                */
-
-            .hero{
-                min-height:100vh;
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                text-align:center;
-                background: radial-gradient(circle at top,#1e3a8a 0%, #0f172a 45%), #0f172a;
-                padding:20px;
-            }
-
-            /*
-            .hero h1{
-                font-size:3rem;
-                margin-bottom:15px;
-
-            }
-            */
-
-            .hero h1{
-                font-size:4rem;
-                margin-bottom:15px;
-                letter-spacing:1px;
-            }
-
-            /*
-            .hero p{
-                font-size:1.2rem;
-                color:#cdb5e1;
-                margin-bottom:30px;
-            }
-            */
-            .hero p{
-                font-size:1.3rem;
-                color:#94a3b8;
-                max-width:700px;
-                margin:auto;
-                margin-bottom:30px;
-            }
-            
-            .buttons{
-                display:flex;
-                justify-content:center;
-                flex-wrap:wrap;
-                gap:15px;
-            }
-
-            .btn{
-                text-decoration:none;
-                padding:12px 22px;
-                border-radius:8px;
-                font-weight:bold;
-                transition:0.3s;
-            }
-
-            .primary{
-                background:#38bdf8;
-                color:#0f172a;
-            }
-
-            .secondary{
-                border:1px solid #38bdf8;
-                color:#38bdf8;
-            }
-
-            .btn:hover{
-                transform:translateY(-3px);
-                opacity:0.9;
-            }
-
-            .about p{
-                max-width:750px;
-                color:#cbd5e1;
-                font-size:1.05rem;
-            }
-
-            .projetos-grid{
-                display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-                gap:20px;
-            }
-            
-            /*
-            .card{
-                background:#1e293b;
-                padding:25px;
-                border-radius:12px;
-                transition:0.3s;
-            }
-
-            .card:hover{
-                /* box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-                
-                transform:translateY(-5px);  
-            }
-            */
-
-            .card{
-                background:rgba(30,41,59,0.7);
-                border:1px solid rgba(255,255,255,0.08);
-                padding:25px;
-                border-radius:18px;
-                transition:0.35s;
-                backdrop-filter:blur(8px);
-                opacity:0;
-                transform: translateY(20px);
-                animation: aparecer 0.8s forwards;
-
-            }
-
-            .card:hover{
-                transform:translateY(-8px);
-                box-shadow:0 15px 30px rgba(0,0,0,0.25);
-                border-color:#38bdf8;
-            }
-
-            .card h3{
-                margin-bottom:10px;
-                color:#38bdf8;
-            }
-
-            .card p{
-                color:#cbd5e1;
-                margin-bottom:15px;
-            }
-
-            .card a{
-                color:#38bdf8;
-                text-decoration:none;
-                font-weight:bold;
-
-            }
-
-            .skills-list{
-                display:flex;
-                flex-wrap:wrap;
-                gap:12px;
-            }
-
-            .skill{
-               /*
-                background:#1e293b;
-                padding:10px 16px;
-                border-radius:20px;
-                */
-                background:#1e293b;
-                padding:12px 18px;
-                border-radius:30px;
-                border:1px solid rgba(255,255,255,0.08);
-                transition:0.3s;
-
-            }
-
-            .skill:hover{
-                background:#38bdf8;
-                color:#0f172a;
-                transform:scale(1.05);
-            }
-
-            section{
-                padding:100px 0;
-            }
-
-            .contact a{
-                display:block;
-                color:#cbd5e1;
-                margin-bottom:12px;
-                text-decoration:none;
-            }
-
-            .contact a:hover{
-                color:#38bdf8;
-            }
-
-            footer{
-                text-align:center;
-                padding:40px;
-                color:#64748b;
-                font-size:0.9rem;
-                border-top:1px solid rgba(255,255,255,0.08);
-                margin-top:40px;
-            }
-            
-            @media(max-width:768px){
-                .hero h1{
-                    font-size:2.2rem;
-                }
-                .hero p{
-                    font-size:1rem;
-                }
-            }
-
-            @keyframes aparecer{
-                to{
-                    opacity:1;
-                    transform: translateY(0);
-                }
-            }
-
-        </style>
-    </head>
-    <body>
-
-        <!--hero ---->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magdiel Barbosa | Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#skills">Skills</a>
+            <a href="#contatos">Contato</a>
+        </nav>
+    </header>
+    
+    <main>
         <section class="hero">
             <div class="container">
                 <h1>Magdiel Barbosa</h1>
@@ -287,95 +25,108 @@
                 <div class="buttons">
                     <a href="#SobreMim" class="btn primary">Sobre Mim</a>
                     <a href="#projetos" class="btn secondary">Ver Projetos</a>
-                    <a href="https://www.linkedin.com/in/magdiel-barbosa" target="_blank" class="btn secondary">LinkedIn</a>
-                    <a href="https://github.com/Magdiel-dev7" target="_blank" class="btn secondary">GitHub</a>
-                    <a href="#contatos" class="btn secondary">Contatos</a>
-
+                    <a href="https://www.linkedin.com/in/magdiel-barbosa" target="_blank" rel="noopener noreferrer" class="btn secondary">LinkedIn</a>
+                    <a href="https://github.com/Magdiel-dev7" target="_blank" rel="noopener noreferrer" class="btn secondary">GitHub</a>
                 </div>
             </div>
         </section>
 
-        <!-- sobre -->
-        <section id="SobreMim" class="about container">
+        <section id="sobre" class="about container">
             <h2>Sobre Mim</h2>
-            <p>
-                Sou um desenvolvedor Full Stack em transição de carreira,<br> 
-                com uma base sólida construída em mais de uma década de dedicação à música. <br>
-                <p>Graduado em Música Licenciatura pela UFPE, minha trajetória sempre teve a tecnologia<br> 
-                como aliada: desde a monitoria em informática aplicada à música até projetos <br>
-                de orquestração digital e produção técnica.<br></p>
-                <p>A vivência como músico profissional, professor e diretor de orquestra<br>
-                me proporcionou competências fundamentais para o desenvolvimento de software:<br> 
-                a disciplina do estudo técnico, a lógica da teoria musical, a organização necessária<br> 
-                para gerir projetos complexos e a colaboração intrínseca ao trabalho em conjunto. <br></p>
-                <p>Atualmente, concluí a pós-graduação em Desenvolvimento Full Stack,<br> 
-                e foco em construir soluções digitais funcionais e bem estruturadas,<br>
-                unindo a criatividade artística ao rigor da engenharia de software.<br> 
-                Busco constantemente aprender novas tecnologias para criar experiências que, <br>
-                assim como uma boa composição, sejam harmônicas e eficientes.<br></p>
-            </p>
+            <p>Sou um desenvolvedor Full Stack em transição de carreira, com uma base sólida construída em mais de <strong>uma década de dedicação à música profissional</strong>.</p>
+            <p><strong>Graduado</strong> em Música Licenciatura pela <strong>UFPE</strong>,sempre uni arte e tecnologia: desde a monitoria de informática aplicada à música até projetos de orquestração digital.</p>
+            <p>Atualmente, concluí a <strong>pós-graduação</strong> em Desenvolvimento Full Stack, e foco em construir soluções digitais funcionais e bem estruturadas, unindo criatividade artística e tecnologia.</p>
         </section>
 
-        <!-- PROJETOS -->
-         <section id="projetos" class="container">
+        <section id="projetos" class="container">
             <h2>Projetos</h2>
 
-            <div class="projects-grid">
+    <div class="projects-grid">
+    <article class="card">
+        <h3>MoodDay</h3>
+        <p>Aplicativo para registro emocional diário.</p>
+        <div class="card-techs">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+        </div>
+        <a href="https://magdiel-dev7.github.io/moodDay/" target="_blank" rel="noopener noreferrer" class="btn secondary">Ver Projeto</a>
+    </article>
 
-                 <div class="card">
-                        <h3>MoodDay</h3>
-                        <p>Aplicativo para registro emocional diário.</p>
-                        <a href="https://magdiel-dev7.github.io/moodDay/" target="_blank" rel="noopener noreferrer" class="btn secondary">Ver Projeto</a>
-                        </div>
+    <article class="card">
+        <h3>Agenda M-GTR</h3>
+        <p>Sistema de agenda pessoal com cadastro, edição e exclusão de compromissos.</p>
+        <div class="card-techs">
+            <span>JavaScript</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+        </div>
+        <a href="https://magdiel-dev7.github.io/agenda-m-gtr/" target="_blank" rel="noopener noreferrer" class="btn secondary">Ver Projeto</a>
+    </article>
 
-                <div class="card">
-                    <h3> Agenda M-GTR</h3>
-                    <p>Sistema de agenda pessoal com cadastro, edição e exclusão de compromissos.</p>
-                    <a href="https://magdiel-dev7.github.io/agenda-m-gtr/" target="_blank" rel="noopener noreferrer" class="btn secondary">Ver Projeto</a>
-                    </div>
+    <article class="card">
+        <h3>Gestão de Alunos M-GTR</h3>
+        <p>Projeto para controle de alunos, valores, dias de aula e edição de registros.</p>
+        <div class="card-techs">
+            <span>Angular</span>
+            <span>Java</span>
+            <span>MongoDB</span>
+        </div>
+        <a href="https://magdiel-dev7.github.io/gestao-alunos-musica/" target="_blank" rel="noopener noreferrer" class="btn secondary">Ver Projeto</a>
+    </article>
 
-                    <div class="card">
-                        <h3>Gestão de Alunos M-GTR</h3>
-                        <p>Projeto para controle de alunos, valores, dias de aula e edição de registros.</p>
-                        <a href="https://magdiel-dev7.github.io/gestao-alunos-musica/" target="_blank" rel="noopener noreferrer" class="btn secondary">Ver Projeto</a>
-                        </div>
+    <article class="card">
+        <h3>A Harmonia do Código</h3>
+        <p>Pitch em video conectando música, UX e desenvolvimento Full Stack.</p>
+        <div class="card-techs">
+            <span>UX Design</span>
+            <span>Pitch</span>
+            <span>Storytelling</span>
+        </div>
+        <a href="https://www.youtube.com/watch?v=bE8gfeqKpB0" target="_blank" rel="noopener noreferrer" class="btn secondary">Ver no YouTube</a>
+    </article>
+</div>
+</section>
 
-                        <div class="card">
-                            <h3>A Harmonia do Código</h3>
-                            <p>Pitch em video conectando música, UX e desenvolvimento Full Stack.</p>
-                            <a href="https://www.youtube.com/watch?v=bE8gfeqKpB0" target="_blank" rel="noopener noreferrer" class="btn secondary">Ver no YouTube</a>
-                            </div>
-
-                        </div>
-            </div>
-         </section>
-
-         <!-- SKILLS -->
-          <section class="container">
+        <section id="skills" class="skills">
             <h2>Skills</h2>
-
-            <div class="skills-list">
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">JavaScript</span>
-                <span class="skill">Angular</span>
-                <span class="skill">Java</span>
-                <span class="skill">MongoDB</span>
+            <div class="skills-grid">
+                <div class="skill-card">HTML5</div>
+                <div class="skill-card">CSS3</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">Angular</div>
+                <div class="skill-card">Java</div>
+                <div class="skill-card">MongoDB</div>
+                <div class="skill-card">Git & GitHub</div>
             </div>
-          </section>
+        </section>
 
-          <!-- contato-->
-           <section id="contatos" class="contact container">
-           
-            <h2>Contato</h2>
+       
+<section id="contatos" class="contact container">
+    <h2>Vamos construir algo juntos?</h2>
+    <p class="contact-subtitle">Seja para uma oportunidade de emprego, um projeto freelancer ou apenas para trocar uma ideia sobre tecnologia e música, sinta-se à vontade para entrar em contato!</p>
 
-            <a href="mailto:magdiellucas1@gmail.com" target="_blank" rel="noopener noreferrer">E-mail: magdiellucas1@gmail.com</a>
-            <a href="https://www.linkedin.com/in/magdiel-barbosa" target="_blank" rel="noopener noreferrer">Meu LinkedIn</a>
-            <a href="https://github.com/Magdiel-dev7" target="_blank" rel="noopener noreferrer">Meu Repositório GitHub</a>
-           </section>
+   
+    <div class="contact-buttons">
+        <a href="mailto:magdiellucas1@gmail.com" target="_blank" rel="noopener noreferrer" class="btn primary">
+            ✉️ Enviar E-mail
+        </a>
 
-           <footer>
-            ₢ 2026 Magdiel Barbosa - Desenvolvedor Full Stack
-           </footer>
-    </body>
+    </div>
+
+    <!-- Links secundários (Redes Sociais) -->
+    <div class="contact-social">
+        <a href="https://www.linkedin.com/in/magdiel-barbosa" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
+        <a href="https://github.com/Magdiel-dev7" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+        <p><strong>Magdiel Barbosa</strong></p>
+        <p>Desenvolvedor Full Stack & Músico</p>
+    </footer>
+
+</body>
 </html>
