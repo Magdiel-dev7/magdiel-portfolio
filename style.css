@@ -105,8 +105,8 @@ h2 {
 }
 
 .primary {
-    background: #38bdf8;
-    color: #0f172a;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
 }
 
 .secondary {
