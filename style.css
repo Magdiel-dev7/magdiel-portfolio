@@ -117,11 +117,11 @@ h2 {
 .btn:hover {
     transform: translateY(-3px);
     opacity: 0.9;
-    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.3); /* Um brilho sutil no botão */
+    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.3); 
 }
 
 .about {
-    text-align: center; /* Centraliza o título H2 da seção */
+    text-align: center; 
 }
 
 .about p {
