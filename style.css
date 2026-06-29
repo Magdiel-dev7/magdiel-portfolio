@@ -1,0 +1,356 @@
+/* ==========================================================================
+   RESET GLOBAL E AJUSTES DE UX (Corrigido com Scroll Padding)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Mantém a rolagem suave ao clicar no menu */
+    
+    /* MAGIA DO UX: Diz ao navegador para parar a rolagem 90px ANTES do topo da seção.
+       Isso compensa a altura do seu menu fixo e dá um respiro visual extra. */
+    scroll-padding-top: 90px; 
+}
+
+body {
+    padding-top: 70px; /* Mantém o Hero encaixado perfeitamente logo abaixo do menu */
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   HEADER & NAVIGATION (Limpo e Organizado)
+   ========================================================================== */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Suporte para Safari antigo */
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 18px;
+}
+
+nav a {
+    color: #f8fafc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* ==========================================================================
+   ESTRUTURA GERAL
+   ========================================================================== */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 100px 0; /* Padronizado para dar respiro entre as seções */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #38bdf8;
+    text-align: center; /* Centraliza todos os títulos h2 da página de uma só vez */
+}
+
+/* ==========================================================================
+   SEÇÃO HERO
+   ========================================================================== */
+.hero {
+    min-height: calc(100vh - 70px); /* Desconta a altura do menu para o encaixe perfeito */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(circle at top, #1e3a8a 0%, #0f172a 45%), #0f172a;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #94a3b8;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.primary {
+    /* background: #38bdf8;
+    color: #0f172a;*/
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.secondary {
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.3); /* Um brilho sutil no botão */
+}
+
+/* ==========================================================================
+   SOBRE MIM (Centralizado para manter a consistência)
+   ========================================================================== */
+.about {
+    text-align: center; /* Centraliza o título H2 da seção */
+}
+
+.about p {
+    max-width: 750px;
+    color: #cbd5e1;
+    font-size: 1.05rem;
+    margin: 0 auto 20px auto; /* O '0 auto' centraliza o bloco do parágrafo na tela */
+    text-align: center; /* Centraliza o texto por dentro do parágrafo */
+}
+
+/* ==========================================================================
+   PROJETOS (GRID)
+   ========================================================================== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Ajuste no Card para organizar o conteúdo de cima para baixo */
+.card {
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    border-radius: 18px;
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    animation: aparecer 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards; 
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    
+    /* Novas propriedades para alinhar o botão no fundo */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Faz com que o parágrafo empurre o que estiver abaixo dele */
+.card p {
+    color: #cbd5e1;
+    margin-bottom: 15px;
+    flex-grow: 1; 
+}
+
+/* Container das etiquetas de tecnologia */
+.card-techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px; /* Dá espaço antes do botão */
+}
+
+/* Estilo de cada etiqueta individual */
+.card-techs span {
+    background: rgba(56, 189, 248, 0.1); /* Azul bem clarinho com transparência */
+    color: #38bdf8; /* O mesmo azul que você já usa */
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    text-transform: uppercase; /* Deixa o texto em caixa alta sutil */
+}
+
+/* Garante que o botão ocupe toda a largura do card e fique centralizado */
+.card .btn {
+    text-align: center;
+    width: 100%;
+}
+
+/* ==========================================================================
+   SKILLS
+   ========================================================================== */
+.skills {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    color: #cbd5e1;
+}
+
+.skill-card {
+    background: #111827;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 18px;
+    border-radius: 14px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.15);
+}
+
+/* ==========================================================================
+   CONTATO & FOOTER
+   ========================================================================== */
+/* ==========================================================================
+   SEÇÃO CONTATO (Ajustada para Conversão)
+   ========================================================================== */
+.contact {
+    text-align: center;
+    max-width: 650px; /* Estreita a seção para o texto não ficar muito espalhado */
+    margin: 0 auto;
+}
+
+.contact-subtitle {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+}
+
+/* Alinhamento dos botões principais */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+/* Botão específico para o WhatsApp (opcional/futuro) */
+.btn.whatsapp {
+    background-color: #25d366;
+    color: #fff;
+}
+.btn.whatsapp:hover {
+    background-color: #128c7e;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
+/* Links das redes sociais embaixo */
+.contact-social {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-social a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background: rgba(30, 41, 59, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.contact-social a:hover {
+    color: #38bdf8;
+    border-color: rgba(56, 189, 248, 0.2);
+    background: rgba(30, 41, 59, 0.8);
+    transform: translateY(-2px);
+}
+
+.footer {
+    margin-top: 80px;
+    padding: 40px 20px;
+    color: #94a3b8;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES (Responsividade)
+   ========================================================================== */
+@media(max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Ajustado de 2.2 para 2.5 para dar mais presença */
+    }
+    .hero p {
+        font-size: 1.1rem;
+    }
+    nav {
+        gap: 15px;
+        padding: 12px;
+    }
+}
+
+/* ==========================================================================
+   KEYFRAMES (Animações)
+   ========================================================================== */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
