@@ -1,7 +1,10 @@
 # 🎵 Magdiel Barbosa | Portfólio Pessoal 🚀
 
+
+
 Bem-vindo ao repositório do meu portfólio profissional. Aqui apresento a consolidação da minha jornada na tecnologia, destacando soluções digitais que unem sensibilidade criativa, adquirida em mais de uma década na música profissional, e rigor técnico em engenharia de software.
 
+> 🔗 **Acesse o Portfólio Online:** [https://magdiel-dev7.github.io/magdiel-portfolio/](https://magdiel-dev7.github.io/magdiel-portfolio/)
 > **Status:** 🎓 Pós-Graduado em Desenvolvimento Full Stack | 🏛️ Graduado/Licenciado em Música pela UFPE.
 
 ---
