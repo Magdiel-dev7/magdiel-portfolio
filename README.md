@@ -2,7 +2,7 @@
 
 
 
-Bem-vindo ao repositório do meu portfólio profissional. Aqui apresento a consolidação da minha jornada na tecnologia, destacando soluções digitais que unem sensibilidade criativa, adquirida em mais de uma década na música profissional, e rigor técnico em engenharia de software.
+Bem-vindo ao repositório do meu portfólio profissional. Aqui apresento a consolidação da minha jornada na tecnologia, destacando soluções digitais que unem a sensibilidade criativa, adquirida em mais de uma década na música profissional, ao desenvolvimento de software com organização, criatividade e aprendizado contínuo.
 
 > 🔗 **Acesse o Portfólio Online:** [https://magdiel-dev7.github.io/magdiel-portfolio/](https://magdiel-dev7.github.io/magdiel-portfolio/)
 
@@ -12,12 +12,12 @@ Bem-vindo ao repositório do meu portfólio profissional. Aqui apresento a conso
 
 ## 🛠️ Stack Tecnológica
 
-O ecossistema de ferramentas e linguagens que domino e utilizo para "forjar" soluções:
+O ecossistema de ferramentas e linguagens que utilizo na construção dos meus projetos:
 
 * **Front-End:** HTML5, CSS3, JavaScript (ES6+), React.js (Vite), Angular
-* **Back-End:** Java
-* **Banco de Dados:** MongoDB
-* **Ferramentas & Versionamento:** Git, GitHub, VS Code
+* **Back-End:** Java, Node.js (em aprendizado)
+* **Banco de Dados:** MongoDB (em aprendizado)
+* **Ferramentas & Versionamento:** Git, GitHub, VS Code, Vercel, GitHub Pages
 
 ---
 
@@ -26,7 +26,7 @@ O ecossistema de ferramentas e linguagens que domino e utilizo para "forjar" sol
 Aqui estão os principais projetos integrados e documentados neste portfólio:
 
 ### 🧠 [MoodDay](https://moodday-react.vercel.app/)
-Aplicativo moderno focado no bem-estar para registro e monitoramento emocional diário.
+Aplicação React para acompanhamento emocional diário, com CRUD completo, gráficos estatísticos, integração com API de clima e exportação em PDF.
 * **Techs:** React.js (Vite), JavaScript, Chart.js, CSS3, HTML5, Js PDF, OpenWeatherMap API.
 
 ### ☀️ [Descubra o Clima](https://buscador-de-clima-react.vercel.app/)
@@ -42,8 +42,8 @@ Sistema de gerenciamento de tempo focado em tarefas com operações completas de
 * **Techs:** JavaScript, HTML5, CSS3.
 
 ### 🎓 [Gestão de Alunos M-GTR](https://magdiel-dev7.github.io/gestao-alunos-musica/)
-Solução robusta desenvolvida para otimizar o controle de turmas, fluxos de caixas e agendamentos de aulas.
-* **Techs:** Angular, Java, MongoDB.
+Projeto desenvolvido para otimizar o controle de alunos, fluxos de caixas e agendamentos de aulas.
+* **Techs:** Angular, Java.
 
 ### 🎥 [Pitch: A Harmonia do Código](https://www.youtube.com/watch?v=bE8gfeqKpB0)
 Apresentação em vídeo conectando os conceitos de UX Design, Orquestração e Desenvolvimento Full Stack.
