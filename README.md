@@ -44,18 +44,22 @@ Aqui estão os principais projetos integrados e documentados neste portfólio:
 ### 🧠 [MoodDay](https://moodday-react.vercel.app/)
 Aplicação React para acompanhamento emocional diário, com CRUD completo, gráficos estatísticos, integração com API de clima e exportação em PDF.
 * **Techs:** React.js (Vite), JavaScript, Chart.js, CSS3, HTML5, Js PDF, OpenWeatherMap API.
+<p>
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![ReactJs](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+</p>
 
 ### ☀️ [Descubra o Clima](https://buscador-de-clima-react.vercel.app/)
 Buscador de previsão do tempo dinâmico, minimalista e com transições fluidas.
 * **Techs:** React, API OpenWeather, HTML5, CSS3, JavaScript.
+<p>
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![ReactJs](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+</p>
 
 ### ⚡ [SupleStronger](https://magdiel-dev7.github.io/suple-stronger/)
 Web App com design futurista (*Cyberpunk/Dark Mode*) criado para controle de estoque e monitoramento financeiro de suplementos alimentares.
