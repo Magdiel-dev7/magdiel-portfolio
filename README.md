@@ -74,11 +74,4 @@ Estou aberto a oportunidades profissionais como **Desenvolvedor Full Stack Jr.**
 * **GitHub:** [@Magdiel-dev7](https://github.com/Magdiel-dev7)
 * **E-mail:** [magdiellucas1@gmail.com](mailto:magdiellucas1@gmail.com)
 
-<div align="center">
-  <img height="180px" src="https://github-readme-stats.vercel.app/api?username=Magdiel-dev7&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" />
-  <img height="180px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Magdiel-dev7&layout=compact&theme=tokyonight" />
-</div>
 
-<div align="center">
-  <img src="https://activity-graph.herokuapp.com/graph?username=Magdiel-dev7&theme=tokyonight" width="100%" />
-</div>
