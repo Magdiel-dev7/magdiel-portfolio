@@ -1,6 +1,4 @@
-# 🎵 Magdiel Barbosa | Portfólio Pessoal 🚀
-
-![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=Magdiel-dev7&theme=tokyonight)
+# 🎵 Magdiel Barbosa | Portfólio Pessoal 🚀 ![Open to Work](https://img.shields.io/badge/Open_to_Work-blue?style=for-the-badge&logo=linkedin)
 
 Bem-vindo ao repositório do meu portfólio profissional. Aqui apresento a consolidação da minha jornada na tecnologia, destacando soluções digitais que unem a sensibilidade criativa, adquirida em mais de uma década na música profissional, ao desenvolvimento de software com organização, criatividade e aprendizado contínuo.
 
@@ -8,7 +6,7 @@ Bem-vindo ao repositório do meu portfólio profissional. Aqui apresento a conso
 
 > **Status:** 🎓 Pós-Graduado em Desenvolvimento Full Stack | 🏛️ Graduado/Licenciado em Música pela UFPE.
 
-![Open to Work](https://img.shields.io/badge/Open_to_Work-blue?style=for-the-badge&logo=linkedin)
+![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=Magdiel-dev7&theme=tokyonight)
 
 ---
 
@@ -16,8 +14,15 @@ Bem-vindo ao repositório do meu portfólio profissional. Aqui apresento a conso
 
 O ecossistema de ferramentas e linguagens que utilizo na construção dos meus projetos:
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-DD0031?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-DD0031?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-DD0031?style=for-the-badge&logo=javascript&logoColor=white)
+![ReactJs](https://img.shields.io/badge/ReactJs-ED8B00?style=for-the-badge&logo=reactjs&logoColor=white)
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![NodeJs](https://img.shields.io/badge/NodeJs-DD0031?style=for-the-badge&logo=nodejs&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-DD0031?style=for-the-badge&logo=mongodb&logoColor=white)
+
 
 * **Front-End:** HTML5, CSS3, JavaScript (ES6+), React.js (Vite), Angular
 * **Back-End:** Java, Node.js (em aprendizado)
