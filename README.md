@@ -6,22 +6,24 @@ Bem-vindo ao repositório do meu portfólio profissional. Aqui apresento a conso
 
 > **Status:** 🎓 Pós-Graduado em Desenvolvimento Full Stack | 🏛️ Graduado/Licenciado em Música pela UFPE.
 
-![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=Magdiel-dev7&theme=tokyonight)
-
 ---
 
 ## 🛠️ Stack Tecnológica
 
 O ecossistema de ferramentas e linguagens que utilizo na construção dos meus projetos:
 
-![HTML5](https://img.shields.io/badge/HTML5-DD0031?style=for-the-badge&logo=html5&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-ED8B00?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-DD0031?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-DD0031?style=for-the-badge&logo=javascript&logoColor=white)
-![ReactJs](https://img.shields.io/badge/ReactJs-ED8B00?style=for-the-badge&logo=reactjs&logoColor=white)
-![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![NodeJs](https://img.shields.io/badge/NodeJs-DD0031?style=for-the-badge&logo=nodejs&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ED8B00?style=for-the-badge&logo=javascript&logoColor=white)
+![ReactJs](https://img.shields.io/badge/ReactJs-DD0031?style=for-the-badge&logo=reactjs&logoColor=white)
+![Angular](https://img.shields.io/badge/Angular-ED8B00?style=for-the-badge&logo=angular&logoColor=white)
+![Java](https://img.shields.io/badge/Java-DD0031?style=for-the-badge&logo=java&logoColor=white)
+![NodeJs](https://img.shields.io/badge/NodeJs-ED8B00?style=for-the-badge&logo=nodejs&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-DD0031?style=for-the-badge&logo=mongodb&logoColor=white)
+![Git & GitHub](https://img.shields.io/badge/Git&GitHub-ED8B00?style=for-the-badge&logo=git&github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VSCode-DD0031?style=for-the-badge&logo=vscode&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-ED8B00?style=for-the-badge&logo=vercel&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/GitHubPages-DD0031?style=for-the-badge&logo=GitHubPages&logoColor=white)
 
 
 * **Front-End:** HTML5, CSS3, JavaScript (ES6+), React.js (Vite), Angular
